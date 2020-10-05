@@ -7,16 +7,27 @@
 </head>    
 <body>
 
-<h2> CONTACT HEADER </h2>
-<p> Something here sometime later </p>
+<header>
+    <div>
+        <h2> CONTACT HEADER </h2>
+        <p> Something here sometime later </p>    
+    </div>
+   
+    <h3>
+        <a href = "{{ url_for('home') }}"><button>Home</button> </a>
+    </h3>
+    
 
-<h3>
-    <a href = "{{ url_for('home') }}"><button>Home</button> </a>
-</h3>
+    <h3>
+        <a href = "{{ url_for('about') }}"><button>About</button> </a>
+    </h3>
 
-<h3>
-    <a href = "{{ url_for('about') }}"><button>About Us</button> </a>
-</h3>
+
+    <h3>
+        <a href = "{{ url_for('contact') }}"><button>Contact</button> </a>
+    </h3>
+           
+</header>
 
 </body>
 </html>

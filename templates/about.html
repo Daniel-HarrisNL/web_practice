@@ -7,15 +7,29 @@
 </head>    
 <body>
 
-<h2> ABOUT HEADER </h2>
-<p> I am Daniel, the creator of this page. </p>
+<header>
+    <div>
+        <h2> ABOUT HEADER </h2>
+        <p> I am Daniel, the creator of this page. </p>
+    </div>
+    
+    <h3>
+        <a href = "{{ url_for('home') }}"><button>Home</button> </a>
+    </h3>
+    
 
-<h3>
-    <a href = "{{ url_for('home') }}"><button>Home</button> </a>
-</h3>
-<h3>
-    <a href = "{{ url_for('contact') }}"><button>Contact</button> </a>
-</h3>
+    
+    <h3>
+        <a href = "{{ url_for('about') }}"><button>About</button> </a>
+    </h3>
+    
+
+    
+    <h3>
+        <a href = "{{ url_for('contact') }}"><button>Contact</button> </a>
+    </h3>
+            
+</header>
 
 </body>
 </html>

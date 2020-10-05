@@ -6,27 +6,36 @@
     <link rel="stylesheet" type="text/css" href="static/style.css" media="screen"/>
 </head>    
 <body>
-
-<h2> HOMEPAGE HEADER </h2>
-<p> Here is a website </p>
-
-<h3>
-    <a href = "{{ url_for('about') }}"><button>About Us</button> </a>
-</h3>
-<h3>
-    <a href = "{{ url_for('contact') }}"><button>Contact</button> </a>
-</h3>
-
-{% if good %}
-<p> Today is good. </p>
-{% else %}
-<p> Today is bad.</p>
-{% endif %}
-
-{% for post in posts %}
-    <h2> {{post.title}}</h2>
-    <h3> Author: {{post.author}}</h3>
-{% endfor %}
+    
+    <header>
+        <h2> HOMEPAGE HEADER </h2>
+        <p> Here is a website </p>
+        
+        <h3>
+            <a href = "{{ url_for('about') }}"><button>About Us</button> </a>
+        </h3>
+        <h3>
+            <a href = "{{ url_for('contact') }}"><button>Contact</button> </a>
+        </h3>
+        
+    </header>
+    
+    <section>
+        {% if good %}
+        <p> Today is good. </p>
+        {% else %}
+        <p> Today is bad.</p>
+        {% endif %}
+    </section>
+    
+    <section>
+        {% for post in posts %}
+        <h2> {{post.title}}</h2>
+        <h3> Author: {{post.author}}</h3>
+        {% endfor %}
+    </section>
+    
+    <footer>footer</footer>
 
 </body>
 </html>
