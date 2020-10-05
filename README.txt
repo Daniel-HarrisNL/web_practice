@@ -1,4 +1,4 @@
-Educational attempt at creating a basic webpage from scrap.
+Educational attempt at creating a basic webpage from scratch.
 
 Written in Python 3.6 using Flask.
 

@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog</title>
+    <title>About Us</title>
 </head>    
 <body>
 
 <h2> ABOUT HEADER </h2>
 <p> I am Daniel, the creator of this page. </p>
+
+<h2>
+    <a href = "{{ url_for('home') }}">Home </a>
+</h2>
+<h2>
+    <a href = "{{ url_for('contact') }}">Contact </a>
+</h2>
 
 </body>
 </html>

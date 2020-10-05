@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog</title>
+    <title>Homepage</title>
 </head>    
 <body>
 
 <h2> HOMEPAGE HEADER </h2>
 <p> Here is a website </p>
+
+<h2>
+    <a href = "{{ url_for('about') }}">About Us </a>
+</h2>
+<h2>
+    <a href = "{{ url_for('contact') }}">Contact </a>
+</h2>
 
 {% if good %}
 <p> Today is good. </p>
