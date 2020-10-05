@@ -20,4 +20,5 @@ def blogpost(blog_id):
     return 'This is blog post number ' + blog_id
 
 if __name__ == '__main__':
-    app.run()
+    #Inbound setting in EC2 must be set up with Custom TCP Rule, Port range 8080, Source = Anywhere
+    app.run(host='0.0.0.0', port=8080, debug=True)
