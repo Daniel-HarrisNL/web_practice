@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>    
+<body>
+
+<h2> HOMEPAGE HEADER </h2>
+<p> Here is a website </p>
+
+{% if good %}
+<p> Today is good. </p>
+{% else %}
+<p> Today is bad.</p>
+{% endif %}
+
+{% for post in posts %}
+    <h2> {{post.title}}</h2>
+    <h3> Author: {{post.author}}</h3>
+{% endfor %}
+
+</body>
+</html>

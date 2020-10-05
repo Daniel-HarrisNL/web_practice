@@ -5,19 +5,23 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello World'
-
+    posts = [{'title': 'Test Post #1', 'author': 'Daniel' },
+            {'title': 'Test Post #2', 'author': 'Daniel'}
+            ]
+    return render_template('home.html', good = True, posts=posts)
+    
 @app.route('/about')
 def about():
-    return 'The About Page'
+    return render_template('about.html')
 
-@app.route('/blog')
-def blog():
-    return render_template('blog.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
-@app.route('/blog/<string:blog_id>')
-def blogpost(blog_id):
-    return 'This is blog post number ' + blog_id
+# SAMPLE SUB-PAGE
+#@app.route('/blog/<string:blog_id>')
+#def blogpost(blog_id):
+#    return 'This is blog post number ' + blog_id
 
 if __name__ == '__main__':
     #Inbound setting in EC2 must be set up with Custom TCP Rule, Port range 8080, Source = Anywhere
