@@ -1,36 +1,122 @@
+* {
+  box-sizing: border-box;
+  /*background: rgb(73,73,73);*/
+}
+
 body {
-    background: rgb(58, 58, 58);
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: rgb(208,212,223);
-    margin: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 10px;
+  background: rgb(65,65,65);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(48,48,48);
+  color: rgb(0,183,255);
+}
+
+.header h1 {
+  font-size: 50px;
+  color: rgb(0,183,255);
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(28,28,28);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  background: rgb(38,38,38);
+  color: rgb(208,212,223);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(48,48,48);
+  color: rgb(218,222,233);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: rgb(30,30,30);
+  padding-left: 20px;
+}
+
+/* Fake image, update with real images and change instances later. */
+.fakeimg {
+  background-color: gray;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(55,55,55);
+  padding: 20px;
+  margin-top: 20px;
+  color: rgb(0,190,255);
+}
+
+/* Change h2 text within card */
+.card h2 {
+  color: rgb(0,180,255);
+}
+
+/* Change h4 text within card */
+.card h4 {
+  color: black
+}
+
+/* Change h5 text within card */
+.card h5 {
+  color: rgb(0,190,255);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: gray;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
     padding: 0;
-    }
-h2 {
-    background: rgb(48,48,48);
-    color: rgb(0,183,255);
-    }
-h3 {
-    color: rgb(158,158,158);
-    }
-button {
-    background: gray;
-    color: rgb(208,212,223);
+  }
 }
 
-/* Attempt to style divs, currently not working.
-
-header {
-    background: rgb(0,0,0);
-    padding: 20px;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
-section{
-    background: rgb(0,0,0);
-    color: rgb(0,0,255);
-    margin: 20px;
-}
-footer{
-    background: rgb(0,0,0);
-    margin: 20px;
-} 
-
-*/

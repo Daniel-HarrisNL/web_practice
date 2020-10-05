@@ -5,37 +5,61 @@
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="static/style.css" media="screen"/>
 </head>    
+
 <body>
-    
-    <header>
-        <h2> HOMEPAGE HEADER </h2>
-        <p> Here is a website </p>
-        
-        <h3>
-            <a href = "{{ url_for('about') }}"><button>About Us</button> </a>
-        </h3>
-        <h3>
-            <a href = "{{ url_for('contact') }}"><button>Contact</button> </a>
-        </h3>
-        
-    </header>
-    
-    <section>
-        {% if good %}
-        <p> Today is good. </p>
-        {% else %}
-        <p> Today is bad.</p>
-        {% endif %}
-    </section>
-    
-    <section>
-        {% for post in posts %}
-        <h2> {{post.title}}</h2>
-        <h3> Author: {{post.author}}</h3>
-        {% endfor %}
-    </section>
-    
-    <footer>footer</footer>
+
+<div class="header">
+    <h1>My Website</h1>
+    <p>Placeholder Text</p>
+</div>
+
+<div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sept 8, 2020</h5>
+            <div class="fakeimg" style="height:200px;"><h4>Image</h4></div>
+            <p>Some text..</p>
+            <p>Started KEYIN</p>
+        </div>
+        <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Oct 4, 2020</h5>
+            <div class="fakeimg" style="height:200px;"><h4>Image</h4></div>
+            <p>Some text..</p>
+            <p>Started developing this page</p>
+        </div>
+    </div>
+  
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;"><h4>Image</h4></div>
+            <p> My name is Daniel, I am a student at Keyin.</p></p>
+        </div>
+        <div class="card">
+            <h3>Projects</h3>
+            <div class="fakeimg"><h4>Image</h4></div>
+            <div class="fakeimg"><h4>Image</h4></div>
+            <div class="fakeimg"><h4>Image</h4></div>
+        </div>
+        <div class="card">
+            <h3>Contact Me</h3>
+            <p>Some text..</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
 </body>
 </html>
