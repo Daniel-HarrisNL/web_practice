@@ -76,19 +76,32 @@ img {
   color: rgb(218,222,233);
 }
 
-/* Create two unequal columns that floats next to each other */
+
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  background-color: black;
 }
 
-/* Right column */
+ /*Right column */
 .rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: rgb(30,30,30);
+  float: right;
   padding-left: 20px;
+  background-color: rgb(48,48,48);
+  background-image: url('images/mock_map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 453px;
+  width: 768px;
+  background-position: center;
+}
+
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+.col {
+  display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
 /* Fake image, update with real images and change instances later. */
@@ -99,9 +112,15 @@ img {
   padding: 20px;
 }
 
+.threecolumn{
+  float: left;
+  width: 33%;
+  padding: 20px;
+}
+
 /* Add a card effect for articles */
 .card {
-  background-color: rgb(55,55,55);
+  background-color: rgb(73,73,73);
   padding: 20px;
   margin-top: 20px;
   color: rgb(0,190,255);
@@ -138,12 +157,12 @@ img {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
-}
+}*/
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
