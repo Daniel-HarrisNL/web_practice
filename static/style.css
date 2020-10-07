@@ -68,7 +68,6 @@ img {
   height: 600px;
   color: rgb(0,183,255);
 }
-
 .header h1 {
   font-size: 50px;
   color: rgb(0,183,255);
@@ -172,6 +171,7 @@ img {
 .featuredimg1 {
   background-image: url('images/pi_nas.jpeg');
   background-color: gray;
+  background-position: center;
   width: 100%;
   height: 400px;
   padding: 20px;
@@ -179,6 +179,7 @@ img {
 .featuredimg2 {
   background-image: url('images/bot_image.jpeg');
   background-color: gray;
+  background-position: center;
   width: 100%;
   height: 400px;
   padding: 20px;
@@ -186,6 +187,7 @@ img {
 .featuredimg3 {
   background-image: url('images/rc_image.jpeg');
   background-color: gray;
+  background-position: center;
   width: 100%;
   height: 400px;
   padding: 20px;
@@ -233,7 +235,7 @@ img {
   background-size: 100%;
   width: 200px;
   height: 200px;
-  background-position: center;
+  background-position: left;
   padding-top: 80px;
 
 }
