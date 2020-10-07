@@ -7,11 +7,13 @@ body {
   background-color:rgb(65,65,65);
   
 }
+
 img {
     max-width: 100%;
     max-height: 100vh;
     height: auto;
 }
+
 /* GENERAL USE STYLES */
 /* Clear floats after the columns */
 .row:after {
@@ -19,15 +21,15 @@ img {
   display: table;
   clear: both;
 }
+
 .col-container {
   display: table; /* Make the container element behave like a table */
   width: 100%; /* Set full-width to expand the whole page */
 }
+
 .col {
   display: table-cell; /* Make elements inside the container behave like table cells */
 }
-
-
 
 /* Top Naviagtion Section*/
 .topnav {
@@ -38,6 +40,7 @@ img {
   margin-right: 10px;
   width: 100%;
 }
+
 /* Style the topnav links */
 .topnav a {
   float: left;
@@ -48,13 +51,12 @@ img {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 /* Change color on hover */
 .topnav a:hover {
   background-color: rgb(48,48,48);
   color: rgb(218,222,233);
 }
-
-
 
 /* Header/Blog Title */
 .header {
@@ -68,12 +70,11 @@ img {
   height: 600px;
   color: rgb(0,183,255);
 }
+
 .header h1 {
   font-size: 50px;
   color: rgb(0,183,255);
 }
-
-
 
 /* Spacer with motto statement */
 .herocard {
@@ -84,14 +85,13 @@ img {
   color: rgb(244,80,51);
 }
 
-
-
 /* About section */
 .aboutcard {
   background-color: rgb(184,200,203);
   margin-top: 20px;
   color: black;
 }
+
 .aboutimageleft{
   float: left;
   padding-right: 20px;
@@ -103,6 +103,7 @@ img {
   width: 968px;
   background-position: center;
 }
+
 .aboutright{
   float: left;
   padding-right: 120px;
@@ -110,10 +111,10 @@ img {
   color: rgb(236,232,218);
   text-align: center;
 }
+
 .aboutright h1{
   color: rgb(234,71,23);
 }
-
 
 /* Promoting us section */
 .promocard {
@@ -121,9 +122,9 @@ img {
   margin-top: 20px;
   color: black;
 }
+
 .promoright{
   float: right;
-  padding-left: 20px;
   background-color: rgb(48,48,48);
   background-image: url('images/drone_splash.jpg');
   background-repeat: no-repeat;
@@ -132,6 +133,7 @@ img {
   width: 1100px;
   background-position: center;
 }
+
 .promoleft{
   height: 465px;
   float: left;
@@ -139,12 +141,14 @@ img {
   text-align: center;
   padding-left: 200px;
   padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+
 .promoleft h1{
   color: rgb(234,71,23);
 }
-
-
 
 /* Statement spacer */
 .spacercard {
@@ -155,8 +159,6 @@ img {
   color: white;
 }
 
-
-
 /*Featured*/
 .featuredcard {
   background-color: white;
@@ -165,9 +167,11 @@ img {
   margin-top: 20px;
   color: gray;
 }
+
 .featuredcard h1{
   color: rgb(234,71,23);
 }
+
 .featuredimg1 {
   background-image: url('images/pi_nas.jpeg');
   background-color: gray;
@@ -176,6 +180,7 @@ img {
   height: 400px;
   padding: 20px;
 }
+
 .featuredimg2 {
   background-image: url('images/bot_image.jpeg');
   background-color: gray;
@@ -184,6 +189,7 @@ img {
   height: 400px;
   padding: 20px;
 }
+
 .featuredimg3 {
   background-image: url('images/rc_image.jpeg');
   background-color: gray;
@@ -192,17 +198,12 @@ img {
   height: 400px;
   padding: 20px;
 }
+
 .threecolumn{
   float: left;
   width: 33%;
   padding: 20px;
 }
-
-
-
-
-
-
 
 /*Team Section*/
 .teamcard {
@@ -210,6 +211,7 @@ img {
   margin-top: 20px;
   color: black;
 }
+
 .teamimageleft{
   float: left;
   padding-right: 20px;
@@ -221,6 +223,7 @@ img {
   width: 968px;
   background-position: center;
 }
+
 .teamright{
   float: left;
   padding-right: 120px;
@@ -228,6 +231,7 @@ img {
   color: white;
   text-align: center;
 }
+
 .profile{
   background-image: url('images/stock_profile.png');
   background-color: gray;
@@ -235,12 +239,11 @@ img {
   background-size: 100%;
   width: 200px;
   height: 200px;
-  background-position: left;
+  background-position: center;
+  margin-left:auto;
+  margin-right:auto;
   padding-top: 80px;
-
 }
-
-
 
 /* Contact Section */
 .contactcard {
@@ -249,19 +252,25 @@ img {
   margin-top: 20px;
   color: white;
 }
+
 .contactcard h1{
   color: rgb(234,71,23);
 }
+
 .contactleft {   
   float: left;
   color: white;
   text-align: left;
   padding-left: 350px;
   padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
 }
+
 .contactright {
   float: right;
-  padding-left: 20px;
   background-color: rgb(48,48,48);
   background-image: url('images/mock_map.png');
   background-repeat: no-repeat;
@@ -271,8 +280,6 @@ img {
   background-position: center;
 }
 
-
-
 /* Footer Section */
 .footer {
   padding: 20px;
@@ -281,13 +288,6 @@ img {
   height: 100px;
   color: white;
 }
-
-
-
-
-
-
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 /*@media screen and (max-width: 800px) {
