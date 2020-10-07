@@ -1,15 +1,9 @@
 *{
   box-sizing: border-box;
-  /*background: rgb(73,73,73);*/
 }
 
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  /*padding: 10px;*/
-  /*background-image: url('images/image_1.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;*/
   background-color:rgb(65,65,65);
   
 }
@@ -21,7 +15,6 @@ img {
 
 /* Header/Blog Title */
 .header {
-  /*padding: 30px;*/
   margin-top: 45px;
   text-align: right ;
   background-color: rgb(48,48,48);
@@ -32,17 +25,6 @@ img {
   height: 600px;
   color: rgb(0,183,255);
 }
-
-/*.hero {
-  background-image:url('images/vardef_hero.png');
-  background-position: center;
-  padding: 64px 200px 64px 280px;
-  margin-top: 30px;
-  margin-right: 5px;
-  background-repeat: no-repeat;
-  float: right;
-  
-}*/
 
 .header h1 {
   font-size: 50px;
@@ -141,6 +123,31 @@ img {
   padding: 20px;
 }
 
+.featuredimg1 {
+  background-image: url('images/pi_nas.jpeg');
+  background-color: gray;
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  padding: 20px;
+}
+.featuredimg2 {
+  background-image: url('images/bot_image.jpeg');
+  background-color: gray;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+}
+.featuredimg3 {
+  background-image: url('images/rc_image.jpeg');
+  background-color: gray;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+}
+
 .profile{
   background-image: url('images/stock_profile.png');
   background-color: gray;
@@ -167,8 +174,57 @@ img {
   color: rgb(0,190,255);
 }
 
+.featuredcard {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: gray;
+}
+
+.spacercard {
+  background-color: rgb(73,73,73);
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.herocard {
+  background-color: rgb(73,73,73);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: rgb(229,90,0);
+}
+
+.aboutcard {
+  background-color: rgb(184,200,203);
+  margin-top: 20px;
+  color: black;
+}
+
+.aboutimageleft{
+  float: left;
+  padding-right: 20px;
+  background-color: rgb(48,48,48);
+  background-image: url('images/about_splash.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 465px;
+  width: 968px;
+  background-position: center;
+}
+.aboutright{
+  float: left;
+  padding-right: 120px;
+  height: 465px;
+  color: white;
+  text-align: center;
+}
+
 .promocard {
-  background-color: rgb(231,178,137);
+  background-color: rgb(252,219,197);
   margin-top: 20px;
   color: black;
 }
