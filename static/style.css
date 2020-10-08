@@ -7,7 +7,6 @@ body {
 
 
 
-/* GENERAL USE STYLES */
 /* Clear floats after the columns */
 .grid-container {
   background-color: rgb(65,65,65);
@@ -16,7 +15,7 @@ body {
   width: 100vw;
   grid-row-gap: 10px;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-template-areas:
   "topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav"
   "header header header header header header header header header header header header"
@@ -25,6 +24,8 @@ body {
   "promoleft promoleft promoleft promoleft promoleft promoright promoright promoright promoright promoright promoright promoright"
   "spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer spacer"
   "featured featured featured featured featured featured featured featured featured featured featured featured"
+  "featured1 featured1 featured1 featured1 featured2 featured2 featured2 featured2 featured3 featured3 featured3 featured3"
+  "featuredend featuredend featuredend featuredend featuredend featuredend featuredend featuredend featuredend featuredend featuredend featuredend"
   "teamleft teamleft teamleft teamleft teamleft teamleft teamleft teamright teamright teamright teamright teamright"
   "contactleft contactleft contactleft contactleft contactleft contactleft contactright contactright contactright contactright contactright contactright"
   "footer footer footer footer footer footer footer footer footer footer footer footer";
@@ -35,7 +36,6 @@ body {
 .topnav {
   grid-area: topnav;
   background-color: rgb(28,28,28);
-  overflow: hidden;
   position: fixed;
   width: 100%;
   top: 0;
@@ -138,13 +138,57 @@ body {
 
 /*Featured*/
 .featured{
-  min-height: 400px;
+  height: 100px;
   grid-area: featured;
   background-color: rgb(244,253,254);
   color: black;
+  margin-bottom: -20px;
   text-align: center;
 }
-  
+.featuredend{
+  height: 100px;
+  grid-area: featuredend;
+  background-color: rgb(244,253,254);
+  color: black;
+  margin-top: -20px;
+  text-align: center;
+}
+.featured1 {
+  grid-area: featured1;
+  background-image: url('images/pi_nas.jpeg');
+  background-color: rgb(244,253,254);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  padding: 20px;
+  outline: 10px solid rgb(244,253,254);
+  outline-offset: -10px;
+}
+.featured2 {
+  grid-area: featured2;
+  color: rgb(234,71,23);
+  background-image: url('images/bot_image.jpeg');
+  background-color: rgb(244,253,254);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  padding: 20px;
+  outline: 10px solid rgb(244,253,254);
+  outline-offset: -10px;
+}
+.featured3 {
+  grid-area: featured3;
+  background-image: url('images/rc_image.jpeg');
+  background-color: rgb(244,253,254);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  padding: 20px;
+  outline: 10px solid rgb(244,253,254);
+  outline-offset: -10px;
+  margin-right: 20px;
+}
+
 
 /*Team Section*/
 .teamleft{
@@ -177,6 +221,7 @@ body {
   width: 200px;
 }
 
+
 /* Contact Section */
 .contactleft h1{
   color: rgb(234,71,23);
@@ -197,6 +242,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 20px;
   outline: 20px solid black;
   outline-offset: -20px;
 }
@@ -213,75 +259,46 @@ body {
 }
 
 
-/*TO BE IMPLEMENTED*/
-/*.featuredimg1 {
-  background-image: url('images/pi_nas.jpeg');
-  background-color: gray;
-  background-position: center;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  height: 300px;
-  max-width: 640px;
-  max-height: 400px;
-  width: 33vw;
- 
-}
-
-.featuredimg2 {
-  color: rgb(234,71,23);
-  background-image: url('images/bot_image.jpeg');
-  background-color: gray;
-  background-position: center;
-  grid-column-start: 5;
-  grid-column-end: 8;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  height: 300px;
-  max-width: 640px;
-  max-height: 400px;
-  width: 33vw;
-}
-
-.featuredimg3 {
-  background-image: url('images/rc_image.jpeg');
-  background-color: gray;
-  background-position: center;
-  grid-column-start: 9;
-  grid-column-end: 12;
-  grid-row-start: 10;
-  grid-row-end: 11;
-  height: 300px;
-  max-width: 640px;
-  max-height: 400px;
-  width: 33vw;
-}*/
-
-
-
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-/*@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}*/
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 800px wide */
 @media only screen and (max-width: 800px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+  .topnav a{
+    padding: 14px 18px;
+    margin-left: -10px;
   }
-}
-
-/*@media only screen and (max-width: 550px){
-  .grid-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  .featured1 {
+    margin-right: 20px;
+  }
+  .featured2 {
+    margin-right: 20px;
   }
   
-}*/
+  .grid-container{
+    background-color: rgb(65,65,65);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-areas:
+    "topnav"
+    "header"
+    "hero"
+    "aboutleft"
+    "aboutright"
+    "promoright"
+    "promoleft"
+    "spacer"
+    "featured"
+    "featured2"
+    "featured1"
+    "featured3"
+    "featuredend"
+    "teamleft"
+    "teamright"
+    "contactleft"
+    "contactright"
+    "footer"
+    ;
+  }
+}
