@@ -68,7 +68,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(0,183,255);
-  margin-top:39px;
+  margin-top:30px;
 }
 
 
@@ -265,11 +265,18 @@ body {
     padding: 14px 18px;
     margin-left: -10px;
   }
+  .header{
+    min-height: 550px;
+  }
   .featured1 {
     margin-right: 20px;
   }
   .featured2 {
     margin-right: 20px;
+  }
+  .contactleft {
+    padding-top:20px;
+    padding-bottom:20px;
   }
   
   .grid-container{
