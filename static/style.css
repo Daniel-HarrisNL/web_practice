@@ -234,17 +234,21 @@ body {
   text-align: center;
 }
 .contactright {
-  min-height: 500px;
-  max-height: 800px;
   grid-area: contactright;
   background-color: black;
-  background-image: url('images/mock_map.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#myMap{
+  width: 750px; 
+  height: 500px; 
+  float: right;
+  padding: 20px;
   margin-right: 20px;
-  outline: 20px solid black;
-  outline-offset: -20px;
+  frameborder:0;
+  border:0;
 }
 
 
@@ -278,6 +282,13 @@ body {
     padding-top:20px;
     padding-bottom:20px;
   }
+  #myMap{
+  float: none;
+  height: 450px;
+  width: 600px;
+  padding: 10px;
+  margin-right: 0;
+}
   
   .grid-container{
     background-color: rgb(65,65,65);
