@@ -2,6 +2,7 @@ import os
 #import requests
 from flask import Flask, render_template
 
+#Add database setup here
 
 app = Flask(__name__)
 
