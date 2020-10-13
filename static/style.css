@@ -31,6 +31,22 @@ body {
   "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
+.grid-project {
+  background-color: rgb(65,65,65);
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+  "topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav topnav"
+  "header header header header header header header header header header header header"
+  "hero hero hero hero hero hero hero hero hero hero hero hero"
+  "contactleft contactleft contactleft contactleft contactleft contactleft contactright contactright contactright contactright contactright contactright"
+  "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
 
 /* Top Naviagtion Section*/
 .topnav {
@@ -155,7 +171,7 @@ body {
 }
 .featured1 {
   grid-area: featured1;
-  background-image: url('images/pi_nas.jpeg');
+  background-image: url('images/server.jpeg');
   background-color: rgb(244,253,254);
   background-position: center;
   background-size: cover;
@@ -167,7 +183,7 @@ body {
 .featured2 {
   grid-area: featured2;
   color: rgb(234,71,23);
-  background-image: url('images/bot_image.jpeg');
+  background-image: url('images/googleplay.jpeg');
   background-color: rgb(244,253,254);
   background-position: center;
   background-size: cover;
@@ -178,7 +194,7 @@ body {
 }
 .featured3 {
   grid-area: featured3;
-  background-image: url('images/rc_image.jpeg');
+  background-image: url('images/smartlights.jpg');
   background-color: rgb(244,253,254);
   background-position: center;
   background-size: cover;
@@ -215,6 +231,7 @@ body {
   background-position: center;
   background-size: cover;
   border-radius:50%;
+  box-shadow: gray 0 0 15px;
   height: 200px;
   margin-left:auto;
   margin-right:auto;
@@ -284,8 +301,8 @@ body {
   }
   #myMap{
   float: none;
-  height: 450px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   padding: 10px;
   margin-right: 0;
 }
@@ -319,4 +336,85 @@ body {
     "footer"
     ;
   }
+  
+  .grid-projects{
+    background-color: rgb(65,65,65);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "topnav"
+    "header"
+    "hero"
+    "contactleft"
+    "contactright"
+    "footer"
+    ;
+  }
 }
+
+ /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+} 
